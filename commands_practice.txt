@@ -1,0 +1,179 @@
+    1  apt-get update -y && apt-get upgrade -y
+    2  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    4  sudo apt-key fingerprint 0EBFCD88
+    5  apt-get update
+    6  apt-get update -y
+    7  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    8  apt-get install docker-ce docker-ce-cli containerd.io
+    9  docker
+   10  sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+   11  sudo apt-get install docker-engine
+   12  service docker start
+   13  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   14     $(lsb_release -cs) \
+   15     stable"
+   16  apt-get update -y
+   17  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   18  docker run hello-world
+   19  docker info
+   20  clear
+   21  docker info
+   22  docker run hello-world
+   23  docker ps -a
+   24  clear
+   25  ls -a
+   26  service docker status
+   27  docker info
+   28  clear
+   29  docker info
+   30  clear
+   31  docker version
+   32  clear
+   33  docker --help | less
+   34  docker container ls
+   35  docker --help
+   36  docker image ls
+   37  docker images
+   38  docker ps
+   39  docker ps -a
+   40  docker image ls -a
+   41  docker container ls -a
+   42  history
+   43  clear
+   44  docker container run ubuntu 
+   45  docker container run ubuntu cat /etc/os-release
+   46  docker container ls
+   47  docker container ls -a
+   48  docker container run ubuntu sleep 30
+   49  docker container ls -a
+   50  clear
+   51  docker container run ubuntu sleep 30
+   52  docker container start a7ef717adb61
+   53  docker container stop a7ef717adb61
+   54  docker container run -d ubuntu sleep 30
+   55  ip
+   56  clear
+   57  docker ps
+   58  docker ps -a
+   59  docker container rm a7ef717adb61
+   60  docker container rm f2a9b8bb126d
+   61  docker ps -a
+   62  docker ps
+   63  docker container ls -a
+   64  docker container ls
+   65  clear
+   66  apt-get update -y && apt-get upgrade -y
+   67  clear
+   68  docker images
+   69  docker container run -it ubuntu /bin/bash
+   70  docker ps
+   71  docker ps -a
+   72  docker attach de8a53be07fc
+   73  docker ps -a
+   74  docker container ls -aq
+   75  docker ps -aq
+   76  docker rm ${docker ps -a }
+   77  docker rm ${docker ps -aq}
+   78  doker container  rm ${docker ps -aq}
+   79  doker container  rm ${docker container ls  -aq}
+   80  docker ps -aq
+   81  docker stop de8a53be07fc
+   82  docker ps -aq
+   83  docker ps -a
+   84  doker container  rm ${docker ps -aq}
+   85  doker rm ${docker ps -aq}
+   86  doker container  rm ${docker container ls  -aq}
+   87  docker ls -aq
+   88  clear
+   89  docker container ls -aq
+   90  docker container rm ${docker container ls -aq}
+   91  docker container rm de8a53be07fc
+   92  docker ps -a
+   93  clear
+   94  docker container run -d nginx
+   95  docker container ls -a
+   96  docker container inspect a9297a3939e3
+   97  docker container inspect a9297a3939e3 | less
+   98  clear
+   99  history
+  100  clear
+  101  docker ps -a
+  102  docker logs a9297a3939e3
+  103  docker container logs a9297a3939e3
+  104  docker container top a9297a3939e3
+  105  ps -aux
+  106  ps -aux | less
+  107  docker container top a9297a3939e3
+  108  docker container status
+  109  docker container stat
+  110  clear
+  111  docker container stats
+  112  clear
+  113  docker container stats
+  114  docker ps -a
+  115  docker ps stop
+  116  docker container stop a9297a3939e3
+  117  docker ps stop
+  118  docker ps -a
+  119  docker container rm a9297a3939e3
+  120  clear
+  121  docker ps -a
+  122  shutdown -h now
+  123  docker ps
+  124  docker ps -a
+  125  clear
+  126  docker container ls
+  127  docker container ls -a
+  128  docker container rm de377b3f52e8
+  129  docker container rm e58897cf8f1f
+  130  docker container ls -a
+  131  docker container rm e317b3926a9f 871665e33cd0
+  132  docker container ls -a
+  133  docker container rm 9cb7fc4f90ea
+  134  docker container ls -a
+  135  docker ps -a
+  136  clear
+  137  docker images
+  138  docker rmi fce289e99eb9
+  139  docker images
+  140  docker image ls
+  141  docker image ls -a
+  142  clear
+  143  docker image ls -a
+  144  docker ps -a
+  145  clear
+  146  docker container inspect a9297a3939e3 | less
+  147  docker container inspect a9297a3939e3 | grep Network
+  148  docker container inspect a9297a3939e3 | grep "NetworkSettings"
+  149  docker container inspect a9297a3939e3 | less "NetworkSettings"
+  150  docker container inspect a9297a3939e3 | "NetworkSettings"
+  151  docker container inspect a9297a3939e3 | grep "NetworkSettings"
+  152  docker container inspect a9297a3939e3 | less
+  153  history
+  154  clear
+  155  apt-get update -y
+  156  apt-get upgrade -y
+  157  sudo apt install software-properties-common
+  158  sudo apt-add-repository --yes --update ppa:ansible/ansible
+  159  sudo apt install ansible
+  160  ansible --version
+  161  clear
+  162  ansible --version
+  163  ls
+  164  ls -a
+  165  ls -lart
+  166  ll
+  167  clear
+  168  ls -a
+  169  apt-get install git
+  170  git init
+  171  ls
+  172  ls -a
+  173  git add .
+  174  git status -s
+  175  git commit -m "ANSIBLE configured in AWS instance"
+  176  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  177  git push --set-upstream https://github.com/himalayashinde/RHEL_ANSIBLE.git master
+  178  history
+  179  history >> commands_practice.txt
