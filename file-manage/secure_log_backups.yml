@@ -1,0 +1,11 @@
+---
+- name: use the fetch module to retrive secure log files
+  hosts: all
+  become: false
+  remote_user: devops
+  tasks: 
+    - name: fetch the /var/log/secure_message.txt log file from managed hosts
+      fetch:
+        src: /var/log/secure_message.txt
+        dest: secure-backups
+        flat: no

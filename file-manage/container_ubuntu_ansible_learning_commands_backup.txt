@@ -1,0 +1,541 @@
+    1  apt-get update -y && apt-get upgrade -y
+    2  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    4  sudo apt-key fingerprint 0EBFCD88
+    5  apt-get update
+    6  apt-get update -y
+    7  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    8  apt-get install docker-ce docker-ce-cli containerd.io
+    9  docker
+   10  sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+   11  sudo apt-get install docker-engine
+   12  service docker start
+   13  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   14     $(lsb_release -cs) \
+   15     stable"
+   16  apt-get update -y
+   17  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   18  docker run hello-world
+   19  docker info
+   20  clear
+   21  docker info
+   22  docker run hello-world
+   23  docker ps -a
+   24  clear
+   25  ls -a
+   26  service docker status
+   27  docker info
+   28  clear
+   29  docker info
+   30  clear
+   31  docker version
+   32  clear
+   33  docker --help | less
+   34  docker container ls
+   35  docker --help
+   36  docker image ls
+   37  docker images
+   38  docker ps
+   39  docker ps -a
+   40  docker image ls -a
+   41  docker container ls -a
+   42  history
+   43  clear
+   44  docker container run ubuntu 
+   45  docker container run ubuntu cat /etc/os-release
+   46  docker container ls
+   47  docker container ls -a
+   48  docker container run ubuntu sleep 30
+   49  docker container ls -a
+   50  clear
+   51  docker container run ubuntu sleep 30
+   52  docker container start a7ef717adb61
+   53  docker container stop a7ef717adb61
+   54  docker container run -d ubuntu sleep 30
+   55  ip
+   56  clear
+   57  docker ps
+   58  docker ps -a
+   59  docker container rm a7ef717adb61
+   60  docker container rm f2a9b8bb126d
+   61  docker ps -a
+   62  docker ps
+   63  docker container ls -a
+   64  docker container ls
+   65  clear
+   66  apt-get update -y && apt-get upgrade -y
+   67  clear
+   68  docker images
+   69  docker container run -it ubuntu /bin/bash
+   70  docker ps
+   71  docker ps -a
+   72  docker attach de8a53be07fc
+   73  docker ps -a
+   74  docker container ls -aq
+   75  docker ps -aq
+   76  docker rm ${docker ps -a }
+   77  docker rm ${docker ps -aq}
+   78  doker container  rm ${docker ps -aq}
+   79  doker container  rm ${docker container ls  -aq}
+   80  docker ps -aq
+   81  docker stop de8a53be07fc
+   82  docker ps -aq
+   83  docker ps -a
+   84  doker container  rm ${docker ps -aq}
+   85  doker rm ${docker ps -aq}
+   86  doker container  rm ${docker container ls  -aq}
+   87  docker ls -aq
+   88  clear
+   89  docker container ls -aq
+   90  docker container rm ${docker container ls -aq}
+   91  docker container rm de8a53be07fc
+   92  docker ps -a
+   93  clear
+   94  docker container run -d nginx
+   95  docker container ls -a
+   96  docker container inspect a9297a3939e3
+   97  docker container inspect a9297a3939e3 | less
+   98  clear
+   99  history
+  100  clear
+  101  docker ps -a
+  102  docker logs a9297a3939e3
+  103  docker container logs a9297a3939e3
+  104  docker container top a9297a3939e3
+  105  ps -aux
+  106  ps -aux | less
+  107  docker container top a9297a3939e3
+  108  docker container status
+  109  docker container stat
+  110  clear
+  111  docker container stats
+  112  clear
+  113  docker container stats
+  114  docker ps -a
+  115  docker ps stop
+  116  docker container stop a9297a3939e3
+  117  docker ps stop
+  118  docker ps -a
+  119  docker container rm a9297a3939e3
+  120  clear
+  121  docker ps -a
+  122  shutdown -h now
+  123  docker ps
+  124  docker ps -a
+  125  clear
+  126  docker container ls
+  127  docker container ls -a
+  128  docker container rm de377b3f52e8
+  129  docker container rm e58897cf8f1f
+  130  docker container ls -a
+  131  docker container rm e317b3926a9f 871665e33cd0
+  132  docker container ls -a
+  133  docker container rm 9cb7fc4f90ea
+  134  docker container ls -a
+  135  docker ps -a
+  136  clear
+  137  docker images
+  138  docker rmi fce289e99eb9
+  139  docker images
+  140  docker image ls
+  141  docker image ls -a
+  142  clear
+  143  docker image ls -a
+  144  docker ps -a
+  145  clear
+  146  docker container inspect a9297a3939e3 | less
+  147  docker container inspect a9297a3939e3 | grep Network
+  148  docker container inspect a9297a3939e3 | grep "NetworkSettings"
+  149  docker container inspect a9297a3939e3 | less "NetworkSettings"
+  150  docker container inspect a9297a3939e3 | "NetworkSettings"
+  151  docker container inspect a9297a3939e3 | grep "NetworkSettings"
+  152  docker container inspect a9297a3939e3 | less
+  153  history
+  154  clear
+  155  su ubuntu
+  156  clear
+  157  apt-get update -y
+  158  apt-get upgrade -y
+  159  sudo apt install software-properties-common
+  160  sudo apt-add-repository --yes --update ppa:ansible/ansible
+  161  sudo apt install ansible
+  162  ansible --version
+  163  clear
+  164  ansible --version
+  165  ls
+  166  ls -a
+  167  ls -lart
+  168  ll
+  169  clear
+  170  ls -a
+  171  apt-get install git
+  172  git init
+  173  ls
+  174  ls -a
+  175  git add .
+  176  git status -s
+  177  git commit -m "ANSIBLE configured in AWS instance"
+  178  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  179  git push --set-upstream https://github.com/himalayashinde/RHEL_ANSIBLE.git master
+  180  history
+  181  history >> commands_practice.txt
+  182  ll
+  183  cat commands_practice.txt
+  184  git add commands_practice.txt
+  185  git status -s
+  186  git status
+  187  git commit "history of all docker and git commands"
+  188  git commit -m "history of all docker and git commands"
+  189  git push
+  190  apt list installed
+  191  apt list installed python
+  192  apt list installed all
+  193  cd /etc/ansible/
+  194  ls
+  195  vi hosts
+  196  cat hosts
+  197  echo hosts 
+  198  echo "hosts" 
+  199  pwd
+  200  /etc/ansible/hosts >> ~/hosts_modified
+  201  ll
+  202  chmod 666 hosts 
+  203  ll
+  204  /etc/ansible/hosts >> ~/hosts_modified
+  205  cd ~
+  206  ll
+  207  cd /etc/ansible/
+  208  hosts >> ~/hosts_modified
+  209  ls
+  210  pwd
+  211  cp /etc/ansible/hosts ~/hosts_modified
+  212  cd ~
+  213  ll
+  214  cat hosts_modified
+  215  cd ..
+  216  cd ~
+  217  ansible version
+  218  ansible --version
+  219  clear
+  220  vi /etc/ansible/hosts
+  221  cp /etc/ansible/hosts ~/hosts_modified
+  222  ansible all --list-hosts
+  223  ansible webservers --list-hosts
+  224  ansible ungrouped --list-hosts
+  225  mkdir deploy-inventory
+  226  cd deploy-inventory/
+  227  ls
+  228  vi inventory
+  229  cat inventory 
+  230  ansible webservers --list-hosts
+  231  ansible all --list-hosts
+  232  ansible all -i inventory --list-hosts
+  233  ll
+  234  clear
+  235  ansible all -i inventory --list-hosts
+  236  vi inventory 
+  237  ansible all -i inventory --list-hosts
+  238  ansible ungrouped -i inventory --list-hosts
+  239  clear
+  240  cat inventory 
+  241  ansible ungrouped -i inventory --list-hosts
+  242  ansible all -i inventory --list-hosts
+  243  ansible development -i inventory --list-hosts
+  244  ansible testing -i inventory --list-hosts
+  245  ansible production -i inventory --list-hosts
+  246  ansible us -i inventory --list-hosts
+  247  cd ..
+  248  ls
+  249  git status
+  250  git add deploy-inventory/
+  251  git hosts_modified
+  252  git add hosts_modified
+  253  git commit -m "ansible lab excercise 2"
+  254  git push
+  255  cd /etc/ansible/
+  256  ls
+  257  vi hosts 
+  258  cd ~
+  259  ls
+  260  mkdir deploy-manage
+  261  cd deploy-manage/
+  262  ls
+  263  cd 
+  264  ls
+  265  cd deploy-manage/
+  266  ls
+  267  ll
+  268  touch ansible.cfg
+  269  vi ansible.cfg 
+  270  ansible myself --list-hosts
+  271  vi ansible.cfg 
+  272  ansible myself --list-hosts
+  273  vi ansible.cfg 
+  274  ansible myself --list-hosts
+  275  ansible --version
+  276  vi ansible.cfg
+  277  cat ansible.cfg
+  278  ansible --version
+  279  rename ansible.cfg inventory
+  280  apt install rename
+  281  rename ansible.cfg inventory
+  282  ll
+  283  mv ansible.cfg inventory
+  284  ll
+  285  cat inventory
+  286  ansible --version
+  287  ansible myself --list-hosts
+  288  ansible myself -i --list-hosts
+  289  ansible -i myself --list-hosts
+  290  clear
+  291  ansible myself --list-hosts
+  292  ls
+  293  vi ansible.cfg
+  294  ansible myself --list-hosts
+  295  cat inventory
+  296  ansible intranetweb --list-hosts
+  297  ansible everyone --list-hosts
+  298  vi ansible.cfg 
+  299  ansible intranetweb --list-hosts
+  300  cd ~
+  301  ll
+  302  git status
+  303  git add deploy-manage/
+  304  git commit -m "Guided excercise page 32 solved managing ansible configuration files"
+  305  git push 
+  306  shutdown -h now
+  307  ls -a
+  308  ansible --version
+  309  docker
+  310  clear
+  311  docker -version
+  312  docker --version
+  313  clear
+  314  docker version
+  315  clear
+  316  docker images
+  317  docker rmi ubuntu
+  318  docker rmi nginx
+  319  clear
+  320  docker images
+  321  docker ps -a
+  322  docker container ls -a
+  323  clear
+  324  dockcer pull ubuntu
+  325  docker pull ubuntu
+  326  mkdir deploy-manage
+  327  ls -a
+  328  mkdir deploy-adhoc
+  329  cd deploy-adhoc/
+  330  docker container run -it ubuntu /bin/bash
+  331  docker ps -a
+  332  docker ps -a
+  333  docker stop c8508f4b0ca9
+  334  docker rm c8508f4b0ca9
+  335  docker ps -a
+  336  clear
+  337  docker search rhel
+  338  docker search centos
+  339  docker pull centos
+  340  docker run -it centos /bin/bash
+  341  clear
+  342  docker ps -a
+  343  docker attach a157e1416f9b
+  344  docker inspect a157e1416f9b
+  345  docker inspect a157e1416f9b | grep ipv4
+  346  docker inspect a157e1416f9b | less
+  347  ssh root@172.17.0.2
+  348  docker ps -a
+  349  docker attach a157e1416f9b
+  350  clear
+  351  cd ..
+  352  mkdir data-secret
+  353  cd data-secret/
+  354  vi create_users.yml
+  355  ansible-playbook --syntax-check
+  356  ansible-playbook --syntax-check create_users.yml 
+  357  touch secret.yml
+  358  ansible-playbook --syntax-check create_users.yml 
+  359  ansible-playbook --check create_users.yml 
+  360  echo 'redhat' > vault-pass
+  361  chmod 600 vault-pass 
+  362  cd ..
+  363  git status -s
+  364  git add data-secret/
+  365  git status -s
+  366  mkdir data-facts
+  367  cd data-facts/
+  368  ls
+  369  vi custom.fact
+  370  vi setup_facts.yml
+  371  ansible-playbook --syntax-check setup_facts.yml
+  372  vi setup_facts.yml 
+  373  ansible-playbook --syntax-check setup_facts.yml
+  374  ansible-playbook --check setup_facts.yml
+  375  vi playbook.yml
+  376  ll
+  377  cd data-facts/
+  378  ll
+  379  vi .playbook.yml.swp
+  380  mv .playbook.yml.swp playbook.yml
+  381  ll
+  382  vi playbook.yml 
+  383  rm playbook.yml 
+  384  vi playbook.yml
+  385  ansible-playbook --syntax-check playbook.yml
+  386  cd ..
+  387  git status -s
+  388  git add data-facts/
+  389  git status -s
+  390  git push
+  391  git push https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  392  git pull https://github.com/himalayashinde/RHEL_ANSIBLE.git
+  393  git push
+  394  git commit -m "page 112 and 124 excercise completed"
+  395  git push
+  396  shutdown -h now
+  397  ansible 
+  398  ansible --version
+  399  docker images
+  400  docker ps -a
+  401  docker rm a157e1416f9b
+  402  docker ps -a
+  403  docker container run -it /bin/bash
+  404  docker container run ubuntu -it /bin/bash
+  405  docker ps -a
+  406  docker container run -it ubuntu /bin/bash
+  407  docker ps -a
+  408  docker rm fd3a4494c199
+  409  docker inspect fe5b2c3fcfea
+  410  ping 172.17.0.2
+  411  ssh  root@172.17.0.2
+  412  ssh root@172.17.0.2
+  413  ssh localhost
+  414  ssh root@localhost
+  415  ssh ubuntu@localhost
+  416  clear
+  417  ssh devops@172.17.0.2
+  418  ssh root@172.17.0.2
+  419  ssh devops@172.17.0.2
+  420  ssh root@172.17.0.2
+  421  ll
+  422  cd /etc/ansible/
+  423  ll
+  424  vi hosts
+  425  ll
+  426  cat ansible.cfg
+  427  cat  hosts
+  428  cd ~
+  429  ll
+  430  mkdir file-manage
+  431  cd  file-manage/
+  432  ll
+  433  vi secure_log_backups.yml
+  434  ansible-playbook --syntax-check secure_log_backups.yml
+  435  ansible-playbook --check secure_log_backups.yml
+  436  vi secure_log_backups.yml
+  437  ansible-playbook --check secure_log_backups.yml
+  438  ansible-playbook secure_log_backups.yml
+  439  cd ~
+  440  ls -a
+  441  cd .ssh
+  442  ls
+  443  vi known_hosts
+  444  ansible-playbook secure_log_backups.yml
+  445  cd ..
+  446  ll
+  447  cd file-manage/
+  448  ll
+  449  ansible-playbook --check secure_log_backups.yml
+  450  ssh-keygen -t rsa
+  451  cat /root/.ssh/id_rsa.pub
+  452  ansible-playbook --check secure_log_backups.yml
+  453  ssh root@172.17.0.2
+  454  ansible-playbook --check secure_log_backups.yml
+  455  cd ~
+  456  cd .ssh
+  457  ll
+  458  vi authorized_keys
+  459  cat authorized_keys
+  460  ssh devops@172.17.0.2
+  461  cd .ssh
+  462  ls
+  463  vi id_rsa.pub
+  464  cat id_rsa.pub
+  465  docker ps -a
+  466  docker inspect fe5b2c3fcfea
+  467  ssh devops@172.17.0.2
+  468  cd ~
+  469  ll
+  470  cd file-manage/
+  471  ls
+  472  ansible-playbook --check secure_log_backups.yml
+  473  vi secure_log_backups.yml
+  474  cat secure_log_backups.yml 
+  475  ansible-doc --ask-pass
+  476  ansible all -m ping 
+  477  vi secure_log_backups.yml
+  478  ansible all -m ping 
+  479  vi secure_log_backups.yml
+  480  ansible all -m ping 
+  481  ansible-playbook --check secure_log_backups.yml
+  482  ansible-playbook --check secure_log_backups.yml --ask-pass
+  483  ll
+  484  cd ..
+  485  ansoible --version
+  486  ansible --version
+  487  cd /etc/ansible/
+  488  ls
+  489  cat ansible.cfg
+  490  vi ansible.cfg
+  491  ansible-playbook --check secure_log_backups.yml --ask-pass
+  492  cd ~
+  493  cd file-manage/
+  494  ansible-playbook --check secure_log_backups.yml --ask-pass
+  495  cd /etc/ansible
+  496  vi ansible.cfg 
+  497  ansible-playbook secure_log_backups.yml --ask-pass
+  498  cd ~
+  499  cd file-manage/
+  500  ansible-playbook secure_log_backups.yml --ask-pass
+  501  ansible all -m ping --ask-pass
+  502  cd /etc/ansible/
+  503  vi ansible.cfg 
+  504  ansible all -m ping --ask-pass
+  505  cd /etc/ansible/
+  506  vi ansible.cfg
+  507  ansible --version
+  508  vi ansible.cfg
+  509  ansible --version
+  510  vi ansible.cfg
+  511  ll
+  512  vi hosts
+  513  ansible all -m ping --ask-pass
+  514  vi ansible.cfg
+  515  ansible all -m ping --ask-pass
+  516  ansible all -m ping
+  517  ansible-playbook secure_log_backups.yml
+  518  cd ~
+  519  cd file-manage/
+  520  ansible-playbook --check secure_log_backups.yml
+  521  ansible-playbook --check secure_log_backups.yml --ask-pass
+  522  ansible-playbook secure_log_backups.yml
+  523  vi container_ubuntu_ansible_learning.txt
+  524  ll
+  525  vi secure_log_backups.yml
+  526  ansible-playbook secure_log_backups.yml
+  527  ansible-playbook secure_log_backups.yml --ask-pass
+  528  ll
+  529  cd secure-backups/
+  530  ll
+  531  cd 172.17.0.2/
+  532  ls
+  533  cd var/
+  534  ls
+  535  cd log
+  536  ls
+  537  cat secure_message.txt 
+  538  cd ..
+  539  cd ~
+  540  history
+  541  history >> ~/file-manage/container_ubuntu_ansible_learning_commands_backup.txt
